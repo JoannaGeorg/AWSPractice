@@ -5,12 +5,12 @@ This repository is for practicing AWS.
 ##### Task 1: AWS Fundamentals, Account Setup, and IAM
 
 To Do:
-- [ ] Set up/access AWS account
-- [ ] Create budget alerts
-- [ ] Create IAM user/group
-- [ ] Explore AWS Console
-- [ ] Configure MFA
-- [ ] Complete relevant hands-on labs
+- [x] Set up/access AWS account
+- [x] Create budget alerts
+- [x] Create IAM user/group
+- [x] Explore AWS Console
+- [x] Configure MFA
+- [x] Complete relevant hands-on labs
 
 ##### Task 2: AWS Compute and Storage Services
 

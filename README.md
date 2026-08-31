@@ -15,10 +15,10 @@ To Do:
 ##### Task 2: AWS Compute and Storage Services
 
 To Do:
-- [ ] Launch an EC2 instance
-- [ ] Connect to EC2
-- [ ] Practise User Data
-- [ ] Explore IAM roles with EC2
+- [x] Launch an EC2 instance
+- [x] Connect to EC2
+- [x] Practise User Data
+- [x] Explore IAM roles with EC2
 - [ ] Create an S3 bucket
 - [ ] Upload objects
 - [ ] Explore S3 storage classes

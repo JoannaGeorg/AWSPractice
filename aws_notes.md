@@ -72,6 +72,7 @@
     - Deploy an ECS service if needed which is used to maintain desired counter tasks.
 
 #### AWS Storage Services
+
 - **Block Based Storage:** Essentially a hard drive. Hard Disk Drive (HDD) and Solid State Drive (SSD).
 - **File Based Storage:** Has bee created on top of a block based storage system, shared accross the network.
 - **Object Based Storage:** Uploads objects using http protocol. Objects refer to ay type of files and no heirarchy.
@@ -126,4 +127,40 @@
 - AWS Elastic Disaster Recovery Service:
   - Application Recovery - Service designed to protect and recover critical applications quickly at lower costs.
   - Reduced Downtimes.
+
+## DNS, Elastic Load Balancing, and Auto Scaling
+
+#### DNS
+
+- Domain Name System (DNS):
+  - Computers use ip addresses to connect, but people use domain names that are simple. E.g. google.com.
+  - The computer reaches to the DNS server and requests for the ip address of the given domain name. If it is found, the DNS server responds with it, and them the computer connects.
+- Route 53:
+  - Register a domain name - public or private.
+  - Use it to host website.
+- Scaling Up - adding more resources to the server.
+- Scaling out - more instances of the application, 
+
+#### Auto Scaling
+
+- Amazon Ec2 Auto Scaling:
+  - Important service for maintaining the availabilty and automatic scaling of EC2 instances.
+  - Automatically launch or terminate an instance.
+  - Maintains availability and scale capacity.
+  - Scaling is horizontal, AKA Scalling out.
+  - Provides Elasticity and Scalability.
+  - Responds to EC2 status checks and CloudWatch metrics.
+  - Can scale based on demand.
+  - Scaling policies define how to respond to changes in demand.
+
+#### Load Balancing
+
+- Amazon Elastic Load Balancing:
+  - Provides high availabilty and fault tolerance.
+  - Targets:
+    - EC2 instances.
+    - ECS containers.
+    - IP Addresses.
+    - Lambda Functions.
+    - Other Load Balancers.
   

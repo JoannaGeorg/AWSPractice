@@ -19,10 +19,10 @@ To Do:
 - [x] Connect to EC2
 - [x] Practise User Data
 - [x] Explore IAM roles with EC2
-- [ ] Create an S3 bucket
-- [ ] Upload objects
-- [ ] Explore S3 storage classes
-- [ ] Complete relevant hands-on labs
+- [x] Create an S3 bucket
+- [x] Upload objects
+- [x] Explore S3 storage classes
+- [x] Complete relevant hands-on labs
 
 ##### Task 3: Networking, Scaling, and Application Services
 

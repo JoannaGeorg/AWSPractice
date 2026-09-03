@@ -30,10 +30,10 @@ To Do:
 - [ ] Explore VPC
 - [ ] Identify public/private subnets
 - [ ] Explore Security Groups
-- [ ] Create/test a basic Lambda function
-- [ ] Understand API Gateway
-- [ ] Review Auto Scaling and Load Balancer use cases
-- [ ] Complete selected hands-on labs
+- [x] Create/test a basic Lambda function
+- [x] Understand API Gateway
+- [x] Review Auto Scaling and Load Balancer use cases
+- [x] Complete selected hands-on labs
 
 ##### Task 4: Deployment, Databases, Governance, and Security
 

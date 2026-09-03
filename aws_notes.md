@@ -163,4 +163,29 @@
     - IP Addresses.
     - Lambda Functions.
     - Other Load Balancers.
-  
+
+## Application Services  
+
+#### Serverless Services and Event Driven Architecture
+
+- Serverless Services:
+  - No instances to manage.
+  - No need to provision hardware.
+  - No management of OS or software.
+  - Capacity provisioning and patching is handles automatically.
+  - Provides automatic scalling and high availabiltiy.
+- Serverless Services in an event-driven srchitecture allows for the service to be triggered when the event occurs.
+- AWS Lambda:
+  - Most well-known serverless service.
+  - Has functions.
+  - The functions run code in response to some trigger.
+
+#### Application Inyegration Services
+
+- Set of services used to integrate different components of an application.
+- Simple Queue Service (SQS) allows for orders to be queued when there is spike in activity until the autoscalling catches up to allow the workload.
+- Simple Notifiction Service (SNS) set up, operate, and send notifications from the cloud.
+- Step Functions is a coordination of AWS Services with visual workflow.
+- Amazon MQ is a message broker service for Apache Active MQ and RabbitMQ.
+- Amazon EventBridge is a serverless event bus for connecting applications and AWS services.
+

@@ -189,3 +189,65 @@
 - Amazon MQ is a message broker service for Apache Active MQ and RabbitMQ.
 - Amazon EventBridge is a serverless event bus for connecting applications and AWS services.
 
+## Amazon VPC, Netwoorking, and Hybrid
+
+#### Virtual Private Cloud:
+
+- A VPC is a logically isolated portion of the AWS cloud within a region.
+- A subnet in a VPC are mapped to an availability zone one on one.
+
+#### Security Groups and Network ACLs
+
+- Network ACL is a network Access Control List that is applied at the subnet level.
+  - THey screen the traffic that comes into or leaves the subnet.
+- Security Groups are applied at the instance level in any subnet.
+
+#### NAT Gateways and Instances
+
+- NAT Gateway Deployment:
+  - Deployed in public subnets.
+  - Have an elastic IP attatched.
+  - Route to NAT Gateway added to the private subnet.
+- NAT Instance:
+  - Scale manulually.
+
+#### VPC Peering
+
+- A private network Connection between two VPCs.
+- Allows VPCs to communicate as if they were on the same network.
+- Uses AWS' internal network:
+  - Low latency.
+  - High Bandwidth.
+- Key Features:
+  - No Single Point of Failure.
+  - No Bandwidth Bottlenecks.
+  - Works Accross Accounts amd regions.
+  - Full IP Adress Control.
+  - Supports all AWS Services.
+- Limitations:
+  - No Transitive Routing,
+  - Manual Foute Table Updated Required.
+  - No DNS Resolution by Default.
+
+#### VPN And AWS Direct Connect
+
+- Connection between on-premise and cloud.
+- VPN:
+  - AKA AWS site-to-site VON as it connects on-premise data center to the public cloud site, VPC.
+  - It is a managed IPSec VPN.
+- AWS Direct Connect:
+  - It is private connectivity between AWS and on-premise data center.
+  - It provides consistnet network experiences.
+
+#### AWS Transit Gateway
+
+- *Simplified Connectivity:* Transit Gateway simplifies network management by action as a central hub that connects VPCs and on-premise networks.
+- *Scalability:* It supports thousands of connectoins.
+- *Transitive Routing:* Tansit Gateway allows for transitive routing - allowing VPC's to communicate with each other throughh a single central hub.
+- *Integrated VPN and Cirect Connect Support:* Can be used with bothe VON and Direct connect, providing a unified gateqay for both cloud and on-premise networks.
+- *Efficient Use of Route Tables:* Reduces the number of route table entries required as the VPC only need to know how to reach the transit gateway.
+- *Cross-Account Access:* It can be shared across accounts using AWS RAM.
+
+
+#### AWS Outposts
+- Allows to run some of the AWS service in on-premise data centers.

@@ -250,4 +250,79 @@
 
 
 #### AWS Outposts
+
 - Allows to run some of the AWS service in on-premise data centers.
+
+## Deployment and Automation
+
+#### Amazon CLoudFront
+
+- It is a content delivery network that helps improve the performance of content that end users should be able to consume from around the world.
+- Content Delivery Network (CDN) improve performance by caching content closer to the users.
+- It utilizes the AWS Global Network for low latency, high performance connectivity.
+- It delivers static and dynamic contnet and optimizes delivery based on content type.
+- Supports live streaming and video on demand.
+- Lambda@Edge enables proccessing data with Lambda functions closer to users.
+- Uses HTTPS and integrates with AWS ACM for manageing SSL/TLS certificates.
+- INtegrates with AWS Shield and AWS WAF for additional security protection.
+- Content can also be protected with features including signed cookies, signed URLs, and origin access identity (OAI).
+
+#### AWS Gloabal Accelarator
+
+- Operates at the network layer - Layer 4 of OSI model.
+- Provides static IP addresses as a fixed entry point to an applicatoin.
+- Improves performance by leveraging the AWS global netwrok backbone, reducing internet latency and jitter.
+- Performs helath checks and automatically reroutes traffic to healthy endpoints.
+- Supports TCP and UDP traffic, making it suitable fot a wide range of applications, including those requiring non-HTTP protocols.
+- Ideal for non-HTTP use cases such as gaming (UDP traffic), IoT, VoIP, or for services where having a static IP address id beneficial.
+
+#### Infrastructure as Code with AWS CloudFormation
+
+- Infrastructure patterns are defined in a template file using code.
+- CloudFormation builds the infrastructure according to the provided template.
+
+#### AWS Cloud Development Kit
+
+- Open-source software development frameork to defnie cloud application resources usinf familiar programming languages.
+- Preconfigures clous resource with provesn defaults using constructs.
+- Provisions resources using AWS CloudFormation.
+- Enables model application infrastructure using TypeScript, Python, Java, and .NET.
+
+#### Platform as a Service with AWS Elastic Beanstalk
+
+- Supports amny application platforms.
+- Uses core AWS services including EC2 ECS, Auto Scalinf, and Elastic Load Balancing.
+- Provides a UI to monitor and manage the health of applications.
+- Managed platform updates deploy the latest versions of software and patches.
+- Several Layers:
+  - *Applications:* Contain environments, environment configurations, and application versions.
+  - *Application Version:* A section of deployable code - will typically point to an Amazon S3 Bucket containing the code.
+  - *Environments:* An applicaiton version that has been deployed on AWS resources configured and provisioned by Elastic Beanstalk.
+  - *Web Servers:* Are standard applications that listen for and then process HTTP requests, typically over port 80.
+  - *Workers:* are specialized applications that have a background processing task that listens for messages on an Amazon SQS queue.
+
+#### AWS Cloud9
+
+- IT is an integrated development environemnt.
+- Used by developers to write, run, and debug code.
+- Editor provides syntax highlighting, code completion, nad error checking.
+- Terminal is used to navigate the file system, run commands, and mange code.
+- Provides collaboration features that allow multiple developers to work on the same codebase simulataneously.
+- Provides a range of debugging tools to identify and fic errors in code.
+- Integrates with many AWS services.
+
+
+#### AWS AppConfig
+
+- Create, manage, and deploy application configurations.
+- Capability of AWS Systems Manager.
+- A cofigurations is a collection of settings that influence the behhaviour of the application.
+
+
+#### AWS X-Ray
+
+- It is a service that collects data about appliction requests, providing tools for viewing, filtering, and gaining insights.
+- Key features:
+  - End-to-end tracing of distributed applications.
+  - Support for AWS services.
+  - Real-time debugging and monitoring.

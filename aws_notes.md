@@ -415,3 +415,61 @@
 - It is a platform that facilitates the secure exchange and use of data products, including 3rd party data.
 - Extensive Data sets - 3,500+ data sets from 300+ rpoviders.
 - Used for Business Inteligence, and Machine Learning.
+
+## Management and Governence
+
+#### AWS Organizations and Control Tower
+
+- AWS Organizations:
+  - It allows for consolidation of multiple AWS accounts into an organization that is created and centrally managed.
+  - Includes root accounts and organizational units.
+  - Policies are not applied to root accounts or OUs.
+- Control Tower
+  - Extends the capabilties of AWS organizations.
+  - Federated Access (IAM Identity Center)
+  - Centralied logging.
+  - Automation.
+
+#### Systems Manager
+
+- It is a secure end-to-end management solution for resources on AWS, on premesis, and on other clouds.
+- It is an operations hub for:
+  - Operations management.
+  - Application Management.
+  - Change Management.
+  - Node Managment.
+- The SSM Agent must be installed on managed instances and servers.
+- IAM permissions must be configures to allow management.
+
+#### AWS Service Catalog
+
+- It allows organizaations to create and manage catalogs of IT services that are approved for use on AWS.
+- It allows to centrally manage commonly deployed IT services.
+  - IT services can include VM images, servers, software, databases, and multi-tier applicaiton architectures.
+- It enables users to quickly deploy only the approved IT services thay need.
+
+#### AWS Config
+
+- Evalutes the AWS resource configurations for desired setting.
+- Get a snapshot of the current configurations of resources that are associated with the AWS account.
+- Retreive configurations of resources that exist in the account.
+- Retrieve historical configuration of one or more resources.
+- Recieve a notification whwenever a resource is created, modified, or deleted.
+
+#### AWS Trusted Advisor
+
+- It is an online resource that helps to reduce cost, increase performance, and improve security by optimizing the AWS environmnet.
+- It provides real-time guidance to help provision resources following best preactices.
+- It will advise on:
+  - CCost Optimization.
+  - Performance.
+  - Security.
+  - Fault Tolerance.
+
+#### AWS Health API and Dashboards
+
+- Heath API is an applicatoin programming interface to get health related information.
+- It provides alerts and remidiation guidance when AWS is experiencing events that may cause an impact.
+- It gives a personalized view into the performance and availability of the AWS services underlying the resources.
+- Provides proactive notification to help plan for scheduled activities.
+- The Services Health Dashboard is not personalized information but the general health information.

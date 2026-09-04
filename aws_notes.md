@@ -473,3 +473,110 @@
 - It gives a personalized view into the performance and availability of the AWS services underlying the resources.
 - Provides proactive notification to help plan for scheduled activities.
 - The Services Health Dashboard is not personalized information but the general health information.
+
+## AWS Cloud Security and Identity
+
+#### Identity Providers and Federation
+
+- Federation means to take the identity source and link it withh AWS.
+
+#### AWS Directory Services
+
+- Types:
+  - AWS Management Microsoft AD
+  - AD Connector
+  - Simple AD
+
+#### Protecting Secrets
+
+- Systems Manager Parameter Store:
+  - Provides secure, heirarchical storage for configuration data managment and secrets management.
+  - Highly scalable, available, and durable.
+  - Stores data such as passwords, database strings, and license codes as parameter values.
+
+#### Encryption
+
+- Asymmetric Encription:
+  - AKA public key cryptography.
+  - Messages encrypted with the prubliv key can only be decrypted with the corresponding private key.
+- AWS Cetificate Manager (ACM)
+  - Create, store, and renew SSL/TLS X.509 certificates.
+  - Single Domains, multiple domains names, and wildcards.
+  - Integrated with several AWS services.
+- Kye Mnagement Service (KMS):
+  - Create and manage symmetric and asymmetric encryption keys.
+  - THe customer master keys (CMKs) are protected by hardware security modules (HSMs).
+- AWS CloudHSM:
+  - It is a cloud-based hardware security module.
+  - Generate and use an encryption key on th eAWS cloud.
+  - CLOUDHSM reuns in your VPC.
+
+
+#### Logging and Auditing
+
+- CloudWatch Logs:
+  - Gather Application and system logs in CloudWatch.
+  - Difined expiration policies and KMS encryption.
+- CloudTrail
+  - It logs API Activity.
+  - By default, management events are logged and retained for 90 days.
+  - It logs any events to S3 for indefinate retention.
+  - Trail can be within Region or all regions.
+  - CloudWatch can be activated based on API calls in Cloud Trail.
+
+#### Detect and Respond
+
+-  Amazon Detective:
+  - Analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities.
+  - Automatically coolects data fromAWS resources.
+  - Used ML, Statistical Analysis, and Graph theory.
+  - Creates a unified, interactive view of resources, users and interactions between them.
+  - Data Sources include VPC Flow Logs, Cloud Trail, and GuardDuty.
+- AWS GaurdDuty: Intelligent threat detection service.
+- Amazon Macie: Fuuly managed data security and data privacy service that uses ML and pattern matching to discover, monitor, and help protect sensitive data.
+
+#### FireWalls and DDoS Protection
+
+- AWS Web Application Firewall (WAF):
+  - It allows to create reules to filter web traffic based on conditions that include IP addresses, HTTP headers and body, or custom URIs.
+- AWS Shield is a managed DDoS protection service.
+
+#### Network and DNS Firewall
+
+- AWS Network Firewall:
+  - Managed service for VPC network protection.
+  - It includes:
+    - Statefull and Stateless firewall.
+    - Intrusion Preventions System (IPS).
+    - Web Filtering.
+  - Works with AWS Network Firewall manager for centraally applying policies accress VPCs/accounts.
+  - Do not deploy resources in the firewall subnet.
+- Route 53 Resolver DNS Firewall:
+  - Filter and regulate outbound DNS traffic for VPCs.
+  - Requests route through Route 53 Resolver for DNS.
+  - Helps prevent DNS exfilteration of data.
+  - Monitor and control the domains applications can query.
+
+#### AWS Resource Access Manager (RAM)
+
+- Shares resources:
+  - Accross AWS accounts.
+  - Within AWS Organizations ot OUs.
+  - IAM roles and users.
+
+#### Compliance Services
+
+- AWS Config hepls with configuraion compliance.
+- AWS Artifact:
+  - Provides on-demand access to AWS' security and compliance reports and select online agreements.
+  - Reports available inclued:
+    - Service Organization Control (SOC) reports.
+    - Payment Card Industry (PCI) reports.
+  - Provides certifications from accreditation bodies accress geographies and compliance verticla that validate the implementation and operating effectiveness of AWS security controls.
+
+#### Security Management and Support
+
+- AWS Security Hub:
+  - Provides a comprehensive view of security alerts and security posture accross AWS accounts.
+- AWS Security Bulletins
+  - Security and privacy events affecting AWS services.

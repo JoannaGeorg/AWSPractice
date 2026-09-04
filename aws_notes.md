@@ -326,3 +326,92 @@
   - End-to-end tracing of distributed applications.
   - Support for AWS services.
   - Real-time debugging and monitoring.
+
+## Databases and Analytics
+
+#### Database Types and Use Cases
+
+- **Relational Database:**
+  - Orginaized by tables, rows, and columns.
+  - Rigid schema (SQL).
+  - Rules enforeces within database.
+  - Typically scaled vertically.
+  - Supports complex queries and joins.
+  - Eg. Amazon RDS, Oracle, MySQLl, IBM DB2, PostgreSQL.
+- **Non-Relational Database:**
+  - Varied data storage models.
+  - Flexible schema (NoSQL) - datastored in key-value pairs, columns, documents, or graphs.
+  - Scales horizontally.
+  - Unstructured, simple language that supports any kind of schema.
+  - Amazon DynamoDB, Mongo DB, Redis, NEO4j.
+- **Operational/Transactional:**
+  - Online Transaction Processing (OLTP).
+  - Productoin DBs that process transactions.
+  - Short Transactions and simple queries.
+  - Eg:
+    - Realtional: amazon RDs, Oracle, IBM DB2, MySQL.
+    - NON-Relational: MongoDB, Cassandra, NEO3j, and HBase.
+- **Analytical Databse:**
+  - ONline Analytics Processing (OLAP) - the source of thedata comes from OLTP DBs.
+  - Data Warehouse - Typicallt separated from the customer facing DBs.
+  - Long Transactions and complex queries.
+  - Eg:
+    - Relational: Mazon RedShift, Teradata, HP Vertica.
+    - Non-Realtional: Amazon EMR, MapReduce.
+
+#### Amazon Relational Database Service (RDS)
+
+- Managed Realtional database service.
+- Used for online transcation processing (OLTP) use cases.
+- Runs on Amazon EC2 Instances.
+- Amazon Aurora is a MYSQL, PostgreSQL compatible realtional data base built for the cloud.
+
+#### Amazon DynamoDB
+
+- Fully managed NoSQL databse service.
+- Fully serverless service.
+- Key/value store and document sotre/
+- Low Latency access to data.
+- Offers puxh button scaling with no downtime.
+
+#### Amazon ReadShift
+
+- It is a fast, fully amanged data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing Business Intelligence (BI) Tools.
+- It is a SQL based data warebouse used for analytics applications.
+- It is a relational databse that is used for Online Analytics Processing (OLAP) use cases.
+
+#### Amazon EMR (Elastic Map Reduce)
+
+- Managed cluster platform that simplifies running big data frameworkd including Apache Hadoop and Apache Spark.
+- Used for processing data for analytics and business intelligence.
+- Can also be used for transforming and moving large anmounts of data.
+
+#### Amzon ElastiCache
+
+- Fully managed implementations Redis and Memcached.
+- Is a key-value store.
+- In-memory databse offereing high performance and low latency.
+
+#### Amazon Athena
+
+- Athena queries in s3 using SQL.
+- Can be connected to othher data sources with Lambda.
+- Data can be in CSV, TSV, JSON, Parquet, and ORC formats.
+- Uses a managed Data Catalog (AWS Glue) to store information and schhems anout the databases and tables.
+
+#### Amazon OpenSearch Service
+
+- Distributed sercha dn analytics suite.
+- Based on the popular open source Elasticsearch.
+- Supports queries using SQL syntax.
+- Integrates with open-cource tools.
+- Scale by adding or removing instances.
+- Availability in up to 3 Availability zones.
+- Bacjup using SnapShots.
+- Encryption at-rest and in-transit.
+
+#### AWS Data Exchange
+
+- It is a platform that facilitates the secure exchange and use of data products, including 3rd party data.
+- Extensive Data sets - 3,500+ data sets from 300+ rpoviders.
+- Used for Business Inteligence, and Machine Learning.

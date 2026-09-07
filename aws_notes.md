@@ -598,3 +598,24 @@
 
 - Helps organizations understand how adopting the cloud transforms the way they will function.
 - Leverages AWS experience and best practices that help digitally transform and accelerate the business outcomes through innovative use of AWS.
+
+## Accounts, Billing, and Support
+
+#### AWS Pricing Funcdamentals
+
+- **Compute:** Amount of resources such as CPU and RAM and duration.
+- **Storage:** Quantity of data stored.
+- **Outbound Data Transfer:** Quantity of data that is transferred out from all services.
+- EC2 Pricing:
+  - On-Demand
+  - Reserved
+  - Capacity Reservation
+  - Spot Instances
+  - Dedicated Instances
+  - Dedicated Hosts
+
+#### AWS Cost Management Tools
+
+- **AWS Cost Explorer:** Free tool to view charts of the costs.
+- **AWS Cost and Usage Report:** Publishes AWS biling repoerts to an Amazon S3 bucket with the costs broken down by hour, day, month, product, product resource, and tags.
+- **AWS Price List API:** Allows for quering the price of AWS services.

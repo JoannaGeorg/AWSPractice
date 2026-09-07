@@ -580,3 +580,21 @@
   - Provides a comprehensive view of security alerts and security posture accross AWS accounts.
 - AWS Security Bulletins
   - Security and privacy events affecting AWS services.
+
+## Architecting for the CLoud
+
+#### Well-Architected
+
+- It helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for thier applications and workloads.
+- It is based on 6 pillars:
+  - *Operational Excellence:* Supports development and run workloads effectively.
+  - *Security:* Protect data, systems, and assets to take advantage of cloud technologies to improve security.
+  - *Reliability:* Emsures a workload can perform its intended function correctly and consistently when it is expected to.
+  - *Performance Efficency:* The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.
+  - *Cost Optimization:* The ability to run systems to deliver buisness value at the lowes price point.
+  - *Sustainability:* Environmental sustainability is a shared responsisbiltiy between customers and AWS.
+
+#### AWS Cloud Adoption Framework.
+
+- Helps organizations understand how adopting the cloud transforms the way they will function.
+- Leverages AWS experience and best practices that help digitally transform and accelerate the business outcomes through innovative use of AWS.

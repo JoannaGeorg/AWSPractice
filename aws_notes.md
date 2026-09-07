@@ -619,3 +619,25 @@
 - **AWS Cost Explorer:** Free tool to view charts of the costs.
 - **AWS Cost and Usage Report:** Publishes AWS biling repoerts to an Amazon S3 bucket with the costs broken down by hour, day, month, product, product resource, and tags.
 - **AWS Price List API:** Allows for quering the price of AWS services.
+
+## Migration, Machine Learning, and More
+
+#### AWS Migration and Transfer Services
+
+- **AWS Application Migration Service:**
+  - Remmends this (AWS MGN) for lift and shift migrations.
+  - AWS Server Mitgration Service (AWS SMS) and AWS VM Import/Export can also be used.
+- **AWS DataSync:**
+  - Software Agent that connects to the storage system.
+- **AWS Snowball Family:**
+  - Used fir migrating large volumes of data to AWS.
+
+#### AWS Machine Learning and AI Services
+
+- **AWS Rekognition:** Can identify information in an image.
+- **Amazon Transcribe:** Adds speech to text capabilities.
+- **Amazon Translate:** Neural Machine translation that delevers fast, high-quality, and affordable language translation.
+- **Amazon Comprehend:** Natureal-language processing (NLP) service that can incover information in unstructured data.
+- **Amazon Lex:** Conversational AI for Chatbots.
+- **Amazon DevOps Guru:** Cloud Operations service for improving application operational performance and availability.
+- **Amazon CodeGuru Security:** Detect, tracj, and fix, code security vulnerabilities anywhere in the development cycle using ML and automated reasoning.

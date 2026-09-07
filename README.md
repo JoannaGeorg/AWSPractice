@@ -27,9 +27,9 @@ To Do:
 ##### Task 3: Networking, Scaling, and Application Services
 
 To Do:
-- [ ] Explore VPC
-- [ ] Identify public/private subnets
-- [ ] Explore Security Groups
+- [x] Explore VPC
+- [x] Identify public/private subnets
+- [x] Explore Security Groups
 - [x] Create/test a basic Lambda function
 - [x] Understand API Gateway
 - [x] Review Auto Scaling and Load Balancer use cases
@@ -38,8 +38,14 @@ To Do:
 ##### Task 4: Deployment, Databases, Governance, and Security
 
 To Do:
-- [ ] Explore Elastic Beanstalk/CloudFormation
-- [ ] Review RDS and DynamoDB use cases
-- [ ] Explore CloudWatch and CloudTrail
-- [ ] Review security services
-- [ ] Map services to common application requirements
+- [x] Explore Elastic Beanstalk/CloudFormation
+- [x] Review RDS and DynamoDB use cases
+- [x] Explore CloudWatch and CloudTrail
+- [x] Review security services
+- [x] Map services to common application requirements
+
+##### Task 5: AWS Architecture, Billing, Migration & Final Revision
+
+To Do:
+- [x] Review all major AWS services
+- [x] Complete remaining section quizzes
